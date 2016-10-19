@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scfragment_rightheader"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:text="专场推荐"
+    android:textColor="@color/black"
+    android:textSize="15sp"
+    android:gravity="center"
+    android:background="@color/shangcheng_gray"
+    >
+
+</TextView>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:layout_marginRight="7dp"
+    tools:showIn="@layout/mycenter_waitpayment_item">
+
+    <TextView
+        android:id="@+id/tv_goodsNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="共1件商品  实付款:  "
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/tv_sellPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_goodsNum"
+        android:text="¥ 2888.00"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+
+
+    <Button
+        android:id="@+id/bt_right"
+        android:layout_width="72dp"
+        android:layout_height="24dp"
+        android:layout_alignRight="@id/tv_sellPrice"
+        android:layout_below="@id/tv_goodsNum"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/btn_red"
+        android:text="付款"
+        android:textColor="@color/login_loginbtn_normal"
+        android:textSize="15sp"/>
+
+
+    <Button
+        android:id="@+id/bt_left"
+        android:layout_width="72dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/tv_goodsNum"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_toLeftOf="@id/bt_right"
+        android:background="@drawable/btn_black"
+        android:text="取消订单"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+</RelativeLayout>
+
+
+    

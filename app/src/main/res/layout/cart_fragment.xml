@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/cart_nocollect"
+        layout="@layout/cart_nocollect" />
+
+
+
+
+
+
+    <include
+        android:id="@+id/cart_freight"
+        layout="@layout/cart_clearing" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/cartFragment_rv_collectItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cart_nocollect"
+        android:layout_above="@id/cart_freight"/>
+
+</RelativeLayout>

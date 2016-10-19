@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_goods_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="haoqu.com.fxmall.activity.GoodsDetailsActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/goodsGood_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/goodsDetails_bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:background="@color/main_bottom_navigation_background"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:id="@+id/main_rl_homepage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/main_iv_homepage"
+                        style="@style/main_button_iv"
+                        android:src="@drawable/main_bt_homepage" />
+
+                    <TextView
+                        android:id="@+id/main_tv_homepage"
+                        style="@style/main_button_tv"
+                        android:layout_below="@id/main_iv_homepage"
+                        android:text="首页" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/main_rl_shangcheng"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/main_iv_shangcheng"
+                        style="@style/main_button_iv"
+                        android:src="@drawable/main_bt_shangcheng" />
+
+                    <TextView
+                        android:id="@+id/main_tv_shangcheng"
+                        style="@style/main_button_tv"
+                        android:layout_below="@id/main_iv_shangcheng"
+                        android:text="商城 " />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/main_rl_cart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+
+                    <ImageView
+                        android:id="@+id/main_iv_cart"
+                        style="@style/main_button_iv"
+                        android:src="@drawable/main_bt_cart" />
+
+                    <TextView
+                        android:id="@+id/main_tv_cart"
+                        style="@style/main_button_tv"
+                        android:layout_below="@id/main_iv_cart"
+                        android:text="购物车" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="8">
+
+            <Button
+                android:id="@+id/by_addCart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/main_bt_text_selected"
+                android:text="加入购物车"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/bt_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/main_bt_text_selected"
+                android:text="立即购买"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/goodsGood_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/goodsDetails_bottomNavigation"
+        android:layout_below="@+id/goodsGood_toolBar"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+</RelativeLayout>

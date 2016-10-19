@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="370dp">
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/white"
+        android:padding="11dp">
+
+        <TextView
+            android:id="@+id/goodsGood_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="Beats Studio wireless Unity 版,头戴式耳机.以灵感源自乡村音乐的设计传递 Beats 标志性的音效"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/goodsGood_tv_marketPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goodsGood_tv_title"
+            android:text="¥ 2888.00"
+            android:textColor="@color/login_loginbtn_normal"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/goodsGood_tv_expressFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="快递:0.00"
+            android:textColor="@color/cart_noFreight"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/goodsGood_tv_sellNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="月销389笔"
+            android:textColor="@color/cart_noFreight"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/goodsGood_tv_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="辽宁 大连"
+            android:textColor="@color/cart_noFreight"
+            android:textSize="11sp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/goodsGood_rl_chooseClassify"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginTop="14dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/goodsGood_tv_chooseClassify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择  颜色分类"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=">"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="11dp"/>
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

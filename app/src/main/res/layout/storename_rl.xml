@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_store"
+    android:layout_width="match_parent"
+    android:layout_height="28dp"
+    tools:showIn="@layout/mycenter_waitpayment_item">
+
+    <CheckBox
+        android:id="@+id/cb_storePick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="7dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_storeLogo"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@id/cb_storePick"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tv_storeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@id/iv_storeLogo"
+        android:text="beats官方旗舰店  >"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="7dp"
+        android:text="等待付款"
+        android:textColor="@color/login_loginbtn_normal"
+        android:textSize="15sp" />
+
+</RelativeLayout>
+
+    

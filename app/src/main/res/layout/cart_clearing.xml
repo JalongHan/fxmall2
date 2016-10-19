@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="43dp"
+    android:background="@color/white"
+    android:layout_alignParentBottom="true"
+    tools:showIn="@layout/cart_fragment">
+
+    <CheckBox
+        android:id="@+id/cartFragment_cb_allPick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="全选"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:layout_marginLeft="26dp"/>
+
+    <Button
+        android:id="@+id/cartFragment_bt_freight"
+        android:layout_width="96dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@color/main_bt_text_selected"
+        android:text="结算 (1)"
+        android:textSize="12sp"
+        android:textColor="@color/white" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/cartFragment_bt_freight"
+        android:layout_toRightOf="@id/cartFragment_cb_allPick">
+
+
+        <TextView
+            android:id="@+id/cartFragment_tv_totalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:text="¥ 2888.00"
+            android:textColor="@color/main_bt_text_selected"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/cartFragment_tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_toLeftOf="@+id/cartFragment_tv_totalPrice"
+            android:text="合计 : "
+            android:textColor="@color/black"
+            android:textSize="12sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="7dp"
+            android:layout_marginRight="10dp"
+            android:text="不含运费"
+            android:textColor="@color/cart_noFreight"
+            android:textSize="10sp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

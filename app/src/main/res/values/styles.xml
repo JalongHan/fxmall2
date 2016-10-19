@@ -1,0 +1,107 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat">
+        <!--隐藏actionbar-->
+        <item name="android:windowActionBar">false</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+    <!--toast中字体的样式.-->
+    <style name="mytoast_textview_sytle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@drawable/mytoast_yuanjiao_black</item>
+    </style>
+
+    <!--main页按钮imageview样式-->
+    <style name="main_button_iv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+
+    </style>
+
+    <style name="main_button_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/main_bt_text_color</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">6dp</item>
+
+
+    </style>
+
+    <style name="Mycenter_RL">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="Mycenter_RL_IV">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">23dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="Mycenter_RL_TV">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <!--登陆,忘记密码页,注册怘,密码et的style-->
+    <style name="login_et_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/loginActivity_textHint</item>
+        <item name="android:textColorHint">@color/loginActivity_textHint</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+
+    <!--登陆页,忘记密码,注册页登陆完成按钮的style-->
+    <style name="login_btn_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginTop">17dp</item>
+        <item name="android:background">@drawable/login_loginbtn</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!--登陆页,注册和忘记密码tv的style-->
+    <style name="registerforgetPassWord_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/loginActivity_text</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <!--注册页忘记密码页获取验证码按钮style-->
+    <style name="getCode_bt_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/getcode_text_selector</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+
+</resources>

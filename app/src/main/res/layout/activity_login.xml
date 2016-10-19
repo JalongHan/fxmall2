@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="haoqu.com.fxmall.activity.LoginActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="40dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="53dp">
+
+            <ImageView
+                android:id="@+id/lActivity_account_iv"
+                android:layout_width="13dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/login_phone"
+                android:layout_centerVertical="true"
+                />
+
+            <EditText
+                android:id="@+id/lActivity_account_input"
+                android:layout_toRightOf="@id/lActivity_account_iv"
+                android:hint="请输入手机号"
+                android:inputType="number"
+                style="@style/login_et_style" />
+
+        </RelativeLayout>
+
+
+        <include layout="@layout/view_line_nopadding"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/lActivity_password_iv"
+                android:layout_width="13dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/login_password"
+                android:layout_centerVertical="true"
+                />
+
+            <EditText
+                android:id="@+id/lActivity_account_passWord"
+                android:layout_toRightOf="@id/lActivity_password_iv"
+                android:hint="请输入密码(6-18位数字字母组合)"
+                android:inputType="textPassword"
+                style="@style/login_et_style" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/view_line_nopadding"></include>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lActivity_bt_forgetPassword"
+                android:layout_alignParentRight="true"
+                android:text="忘记密码?"
+                style="@style/registerforgetPassWord_style" />
+
+            <TextView
+                android:id="@+id/lActivity_bt_register"
+                android:text="手机号注册"
+                style="@style/registerforgetPassWord_style" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/lActivity_loginBtn"
+            android:text="登  陆"
+            style="@style/login_btn_style" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

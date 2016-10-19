@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout style="@style/Mycenter_RL">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/mycenter_iv_collectGood"
+                style="@style/Mycenter_RL_IV"
+                android:layout_height="25dp"
+                android:src="@mipmap/mycenter_collectgood" />
+
+            <TextView
+                android:id="@+id/mycenter_tv_collectGood"
+                style="@style/Mycenter_RL_TV"
+                android:layout_below="@id/mycenter_iv_collectGood"
+                android:text="收藏宝贝"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/Mycenter_RL">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/mycenter_iv_collectStore"
+                style="@style/Mycenter_RL_IV"
+                android:layout_height="25dp"
+                android:src="@mipmap/mycenter_collectstore" />
+
+            <TextView
+                android:id="@+id/mycenter_tv_collectStore"
+                style="@style/Mycenter_RL_TV"
+                android:layout_below="@id/mycenter_iv_collectStore"
+                android:text="收藏店铺"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/Mycenter_RL">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/mycenter_iv_Cookies"
+                style="@style/Mycenter_RL_IV"
+                android:layout_height="25dp"
+                android:src="@mipmap/mycenter_cookies" />
+
+            <TextView
+                android:id="@+id/mycenter_tv_Cookies"
+                style="@style/Mycenter_RL_TV"
+                android:layout_below="@id/mycenter_iv_Cookies"
+                android:text="浏览记录"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/Mycenter_RL">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/mycenter_iv_Service"
+                style="@style/Mycenter_RL_IV"
+                android:layout_height="25dp"
+                android:src="@mipmap/mycenter_service" />
+
+            <TextView
+                android:id="@+id/mycenter_tv_Service"
+                style="@style/Mycenter_RL_TV"
+                android:layout_below="@id/mycenter_iv_Service"
+                android:text="我的客服"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

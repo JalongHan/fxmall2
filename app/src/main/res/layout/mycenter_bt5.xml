@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <RelativeLayout style="@style/Mycenter_RL">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/mycenter_bt_waitingPayment"
+                style="@style/Mycenter_RL_IV"
+                android:src="@mipmap/mycenter_waitingpayment" />
+
+
+            <TextView
+                android:id="@+id/mycenter_tv_waitingPayment"
+                style="@style/Mycenter_RL_TV"
+                android:layout_below="@id/mycenter_bt_waitingPayment"
+                android:text="待付款" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/Mycenter_RL">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+
+            <ImageView
+                android:id="@+id/mycenter_bt_Waitsend"
+                style="@style/Mycenter_RL_IV"
+                android:src="@mipmap/mycenter_waitsend" />
+
+
+            <TextView
+                android:id="@+id/mycenter_tv_Waitsend"
+                style="@style/Mycenter_RL_TV"
+                android:layout_below="@id/mycenter_bt_Waitsend"
+                android:text="待发货" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/Mycenter_RL">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/mycenter_bt_waitGoods"
+                style="@style/Mycenter_RL_IV"
+                android:src="@mipmap/mycenter_waitgoods" />
+
+
+            <TextView
+                android:id="@+id/mycenter_tv_waitGoods"
+                style="@style/Mycenter_RL_TV"
+                android:layout_below="@id/mycenter_bt_waitGoods"
+                android:text="待收货" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/Mycenter_RL">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/mycenter_bt_waitEvaluation"
+                style="@style/Mycenter_RL_IV"
+                android:src="@mipmap/mycenter_waitevaluation" />
+
+
+            <TextView
+                android:id="@+id/mycenter_tv_waitEvaluation"
+                style="@style/Mycenter_RL_TV"
+                android:layout_below="@id/mycenter_bt_waitEvaluation"
+                android:text="待评价" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/Mycenter_RL">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/mycenter_bt_Refund"
+                style="@style/Mycenter_RL_IV"
+                android:src="@mipmap/mycenter_refund" />
+
+
+            <TextView
+                android:id="@+id/mycenter_tv_Refund"
+                style="@style/Mycenter_RL_TV"
+                android:layout_below="@id/mycenter_bt_Refund"
+                android:text="退货/售后" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

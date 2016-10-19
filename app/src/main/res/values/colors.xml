@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    
+    
+    
+    <color name="main_bt_text">#6C6C6C</color>
+    <color name="main_bt_text_selected">#FD5B5D</color>
+    <color name="main_bottom_navigation_background">#FAFAFA</color>
+
+    <color name="shangcheng_leftnavigation_tv">#333333</color>
+
+    <!--登陆页提示hint的颜色-->
+    <color name="loginActivity_textHint">#CCCCCC</color>
+
+    <!--登陆页新用户注册和忘记密码的颜色 -->
+    <color name="loginActivity_text">#666666</color>
+
+    <!--登陆页登陆按钮颜色normal251 86 106-->
+    <color name="login_loginbtn_normal">#FB566A</color>
+    <!--登陆页登陆按钮颜色pressed251 116 136-->
+    <color name="login_loginbtn_pressed">#FB7488</color>
+    <!--白色-->
+    <color name="white">#FFFFFF</color>
+    <!--black-->
+    <color name="black">#000000</color>
+
+
+    <!--商城页的灰色底色-->
+    <color name="shangcheng_gray">#F0F0F0</color>
+    
+    <!--购物车页面,不含运费字体颜色-->
+    <color name="cart_noFreight">#C6C6C6</color>
+    <!--注册页面,获取验证码颜色normal68 172 255-->
+    <color name="SMS_text_normal">#44ACFF</color>
+    <!--注册页面,获取验证码颜色pressed38 142 225-->
+    <color name="SMS_text_pressed">#268EE1</color>
+    <!--个人中心中,待发货商品的背景色-->
+    <color name="C250250250">#FAFAFA</color>
+    <!--白色背景按钮更下后的背景色-->
+    <color name="whiteBtn_pressed">#6C6C6C</color>
+</resources>

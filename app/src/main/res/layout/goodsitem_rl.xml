@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_good"
+    android:layout_width="match_parent"
+    android:layout_height="96dp"
+    android:background="@color/C250250250"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:showIn="@layout/mycenter_waitpayment_item">
+
+
+    <ImageView
+        android:id="@+id/iv_goodImg"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_centerVertical="true" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/iv_goodImg">
+
+        <TextView
+            android:id="@+id/tv_goodTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Beats Studio wireless 头戴式耳机,Unity 版- 红配黄色"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/tv_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_goodTitle"
+            android:layout_below="@id/tv_goodTitle"
+            android:layout_marginTop="14dp"
+            android:text="颜色分类:"
+            android:textColor="@color/cart_noFreight"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_goodOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_options"
+            android:layout_toRightOf="@id/tv_options"
+
+            android:text="红配黄色"
+            android:textColor="@color/cart_noFreight"
+            android:textSize="11sp" />
+
+
+        <TextView
+            android:id="@+id/tv_marketPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_options"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/tv_goodOptions"
+            android:text="¥ 2888.00"
+            android:textColor="@color/cart_noFreight"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_freight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_goodTitle"
+            android:layout_below="@id/tv_options"
+            android:layout_marginTop="0dp"
+            android:text="运费  "
+            android:textColor="@color/cart_noFreight"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_freightPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_freight"
+            android:layout_toRightOf="@id/tv_freight"
+            android:text="¥ 0.00"
+            android:textColor="@color/cart_noFreight"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+    

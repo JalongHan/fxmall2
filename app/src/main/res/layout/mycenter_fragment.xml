@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="177dp"
+        android:background="@mipmap/mycenter_head_background">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <haoqu.com.fxmall.views.CircleImageView
+
+                android:id="@+id/mycenter_headicon"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/mycenter_default_headicon"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanba"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="14dp"
+                android:layout_below="@id/mycenter_headicon"/>
+
+        </RelativeLayout>
+
+        
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mycenter_allOrder"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的订单"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看全部订单  "
+            android:textSize="12sp"
+            android:textColor="@color/main_bt_text"
+            android:drawableRight="@mipmap/rightarrow"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+    
+    <include
+        android:id="@+id/mycenter_bt5"
+        layout="@layout/mycenter_bt5"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white">
+
+      <include layout="@layout/mycenter_bt4"></include>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/rankhome_guide_banner"/>
+
+
+</LinearLayout>

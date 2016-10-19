@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bottom_navigation_background"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:id="@+id/main_rl_homepage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/main_iv_homepage"
+                style="@style/main_button_iv"
+                android:src="@drawable/main_bt_homepage" />
+
+            <TextView
+                android:id="@+id/main_tv_homepage"
+                style="@style/main_button_tv"
+                android:layout_below="@id/main_iv_homepage"
+                android:text="首页" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_rl_shangcheng"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/main_iv_shangcheng"
+                style="@style/main_button_iv"
+                android:src="@drawable/main_bt_shangcheng" />
+
+            <TextView
+                android:id="@+id/main_tv_shangcheng"
+                style="@style/main_button_tv"
+                android:layout_below="@id/main_iv_shangcheng"
+                android:text="商城 " />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_rl_cart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+
+            <ImageView
+                android:id="@+id/main_iv_cart"
+                style="@style/main_button_iv"
+                android:src="@drawable/main_bt_cart" />
+
+            <TextView
+                android:id="@+id/main_tv_cart"
+                style="@style/main_button_tv"
+                android:layout_below="@id/main_iv_cart"
+                android:text="购物车" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/main_rl_mycneter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/main_iv_mycneter"
+                style="@style/main_button_iv"
+
+                android:src="@drawable/main_bt_me" />
+
+            <TextView
+                android:id="@+id/main_tv_mycneter"
+                style="@style/main_button_tv"
+                android:layout_below="@id/main_iv_mycneter"
+                android:text="我的" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

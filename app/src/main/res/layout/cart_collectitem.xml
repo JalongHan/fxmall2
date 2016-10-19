@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:id="@+id/cartFragment_ll_store"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:gravity="center_vertical">
+
+        <CheckBox
+            android:id="@+id/cartFragment_cb_storePick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"/>
+
+        <ImageView
+            android:id="@+id/cartFragment_iv_storeLogo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="14dp"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/cartFragment_tv_storeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="beats官方旗舰店  >"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="7dp"/>
+
+        <!--<ImageView-->
+            <!--android:id="@+id/cartFragment_iv_arrow"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="15dp" />-->
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/cartFragment_rl_good"
+        android:layout_width="match_parent"
+        android:layout_height="115dp">
+
+        <CheckBox
+            android:id="@+id/cartFragment_cb_goodPick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"/>
+
+
+        <ImageView
+            android:id="@+id/cartFragment_iv_goodImg"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/cartFragment_cb_goodPick"
+            android:layout_marginLeft="5dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/cartFragment_iv_goodImg"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp">
+
+            <TextView
+                android:id="@+id/cartFragment_tv_goodTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beats Studio wireless 头戴式耳机"
+                android:textSize="10sp"
+                android:textColor="@color/black"
+                android:maxLines="2"
+                android:ellipsize="end"/>
+
+
+            <TextView
+                android:id="@+id/cartFragment_tv_sellPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/cartFragment_tv_goodTitle"
+                android:layout_below="@id/cartFragment_tv_goodTitle"
+                android:layout_marginTop="14dp"
+                android:text="¥ 2888.00"
+                android:textSize="13sp"
+                android:textColor="@color/login_loginbtn_normal"/>
+
+            <TextView
+                android:id="@+id/cartFragment_tv_marketPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/cartFragment_tv_sellPrice"
+                android:layout_toRightOf="@id/cartFragment_tv_sellPrice"
+                android:text="¥ 2888.00"
+                android:textSize="10sp"
+                android:textColor="@color/cart_noFreight"
+                android:layout_marginLeft="14dp"/>
+
+            <TextView
+                android:id="@+id/cartFragment_tv_options"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/cartFragment_tv_goodTitle"
+                android:layout_below="@id/cartFragment_tv_sellPrice"
+                android:layout_marginTop="14dp"
+                android:text="颜色分类:"
+                android:textSize="10sp"
+                android:textColor="@color/cart_noFreight"/>
+
+            <TextView
+                android:id="@+id/cartFragment_tv_goodOptions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/cartFragment_tv_options"
+                android:layout_toRightOf="@id/cartFragment_tv_options"
+
+                android:text="红配黄色"
+                android:textSize="10sp"
+                android:textColor="@color/cart_noFreight"/>
+
+            <TextView
+                android:id="@+id/cartFragment_tv_freight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/cartFragment_tv_goodTitle"
+                android:layout_below="@id/cartFragment_tv_options"
+                android:layout_marginTop="0dp"
+                android:text="运费"
+                android:textSize="10sp"
+                android:textColor="@color/cart_noFreight"/>
+
+            <TextView
+                android:id="@+id/cartFragment_tv_freightPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/cartFragment_tv_freight"
+                android:layout_toRightOf="@id/cartFragment_tv_freight"
+                android:text="¥ 0.00"
+                android:textSize="10sp"
+                android:textColor="@color/cart_noFreight"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <Button
+                android:id="@+id/cartFragment_bt_subtract"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@null"
+                android:text="-"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/cartFragment_tv_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/cartFragment_bt_add"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@null"
+                android:text="+"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
