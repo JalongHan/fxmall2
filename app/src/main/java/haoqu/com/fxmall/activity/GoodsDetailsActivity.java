@@ -35,7 +35,6 @@ public class GoodsDetailsActivity extends BaseActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_goods_details);
         initView();
-        mGoodsGoodToolBar.setNavigationIcon(R.mipmap.back);
 
     }
 
