@@ -24,7 +24,7 @@ public class GoodsDetailsActivity extends BaseActivity implements View.OnClickLi
     private ImageView mMainIvCart;
     private TextView mMainTvCart;
     private RelativeLayout mMainRlCart;
-    private Button mByAddCart;
+    private Button mBtAddCart;
     private Button mBtBuy;
     private LinearLayout mGoodsDetailsBottomNavigation;
     private LinearLayout mGoodsGoodFragment;
@@ -49,20 +49,20 @@ public class GoodsDetailsActivity extends BaseActivity implements View.OnClickLi
         mMainIvCart = (ImageView) findViewById(R.id.main_iv_cart);
         mMainTvCart = (TextView) findViewById(R.id.main_tv_cart);
         mMainRlCart = (RelativeLayout) findViewById(R.id.main_rl_cart);
-        mByAddCart = (Button) findViewById(R.id.by_addCart);
+        mBtAddCart = (Button) findViewById(R.id.bt_addCart);
         mBtBuy = (Button) findViewById(R.id.bt_buy);
         mGoodsDetailsBottomNavigation = (LinearLayout) findViewById(R.id.goodsDetails_bottomNavigation);
         mGoodsGoodFragment = (LinearLayout) findViewById(R.id.goodsGood_fragment);
         mActivityGoodsDetails = (RelativeLayout) findViewById(R.id.activity_goods_details);
 
-        mByAddCart.setOnClickListener(this);
+        mBtAddCart.setOnClickListener(this);
         mBtBuy.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.by_addCart:
+            case R.id.bt_addCart:
 
                 break;
             case R.id.bt_buy:

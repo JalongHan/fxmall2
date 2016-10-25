@@ -182,7 +182,7 @@
             android:layout_weight="8">
 
             <Button
-                android:id="@+id/by_addCart"
+                android:id="@+id/bt_addCart"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
